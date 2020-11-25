@@ -31,6 +31,9 @@ public class ListaNotas
         return inicio;
     }
     
+    /**
+     * Ingresa un Nodo a la lista
+     */
     public void agregar(int Nota)
     {
         NodoNota nuevoNodo = new NodoNota();
@@ -55,6 +58,12 @@ public class ListaNotas
         tamanio++;
     }
     
+    
+    /**
+     * Calcula el Promedio del estudiante una vez que se terminan de ingresar las notas, esto de acuerdo
+     * al tamanio de la lista denotas y las notas, es un metodo recursivo que va sumando los valores de la nota
+     * sobre el tamanio de la lista para sacar el promedio
+     */
     public float CalcularPromedio(NodoNota auxiliar){
         float promedio = 0f;
         if (auxiliar.getSiguiente() != null){

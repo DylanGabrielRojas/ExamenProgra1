@@ -16,7 +16,7 @@ public class Grupo
     }
 
     /**
-     * 
+     * ingresa los datos del estudiante y muestra la lista actual de estudiantes
      */
     public void agregarEstudianteLista(String nombre, int carnet, int[] Notas)
     {
@@ -25,7 +25,7 @@ public class Grupo
     }
 
     /**
-     * 
+     * recopila los datos de los estudiantes y los ingresa
      */
     public void agregarEstudiante()
     {

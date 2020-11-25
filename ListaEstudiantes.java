@@ -30,6 +30,10 @@ public NodoEstudiante getInicio()
     return inicio;
 }
 
+    
+/**
+ * crea e  ingresa los nodos a la lista de estudiante del grupo
+ */
 public void agregar(String nombre, int carnet, int[] Notas)
 {
     NodoEstudiante nuevoNodo = new NodoEstudiante(nombre, carnet);
@@ -58,6 +62,10 @@ public void agregar(String nombre, int carnet, int[] Notas)
     this.tamanio = tamanio + 1;
 }
     
+    
+/**
+ * este metodo se encarga de que los nodos se ingresen en orden alfabetico
+ */
 public void agregarAlfabeticamente(NodoEstudiante Nuevo, NodoEstudiante auxiliar, NodoEstudiante auxiliarAnterior) {
     if (auxiliar.getSiguiente() != null){
         if(Nuevo.getNombre().compareToIgnoreCase(auxiliar.getNombre()) < 0){
@@ -75,7 +83,7 @@ public void agregarAlfabeticamente(NodoEstudiante Nuevo, NodoEstudiante auxiliar
 }
 
 /**
- * 
+ * metodo toString de los estudiantes, los acomoda en lista
  */
 public String toString(){
     NodoEstudiante auxiliar = inicio;
@@ -89,7 +97,7 @@ public String toString(){
 }
 
 /**
- * 
+ * pasa un vector con los nodos al arbol para que los acomode
  */
 public NodoEstudiante[] PasarArbol(){
     NodoEstudiante auxiliar = inicio;

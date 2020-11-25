@@ -29,7 +29,7 @@ public class Estudiante
     }
 
     /**
-     * 
+     * calcula el promedio de las notas y setea el dato al objeto
      */
     public void CalcularPromedio()
     {

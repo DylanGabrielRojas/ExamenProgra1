@@ -16,7 +16,8 @@ public class Arbol
     
     
     /**
-     * 
+     * primera parte para ingresar los nodos a la lista, pasa a la funcion recursiva los nodos
+     * para que los acomode
      */
     public void agregar(ListaEstudiantes Lista){
         NodoEstudiante[] VectorLista = Lista.PasarArbol();
@@ -33,7 +34,8 @@ public class Arbol
     }
     
     /**
-     * 
+     * funcion recursiva de insersion de los nodos, acomoda el nodo segun sea mayor o no del auxiliar,
+     * va recorriendo el arbol hasta llegar a las hojas
      */
     public void AgregarNodo(NodoArbol Nodo, NodoArbol auxiliar){
         if (auxiliar.getPromedio() >= Nodo.getPromedio()){
@@ -55,7 +57,7 @@ public class Arbol
     
     
     /**
-     * 
+     * imprime el arbol, no tiene un orden especifico
      */
     public String toString() {
         NodoArbol auxiliar = inicio;
@@ -69,11 +71,8 @@ public class Arbol
         return arbolString;
     }
     
-       // if (auxiliar.getPromedio() > promedio) {
-       //     arbolString = auxiliar.toString() + "\n";
-      // }
     /**
-     * 
+     * funcion recurisva para imprimir el arbol
      */
     public String ImprimeNodo(NodoArbol Nodo) {
         String arbolString =Nodo.toString() + "\n";
@@ -88,7 +87,7 @@ public class Arbol
     
     
     /**
-     * 
+     * imprime los valores mayores al promedio ingresado del arbol
      */
     public String toStringMayor(float promedio) {
         NodoArbol auxiliar = inicio;
@@ -108,11 +107,8 @@ public class Arbol
         return arbolString;
     }
     
-       // if (auxiliar.getPromedio() > promedio) {
-       //     arbolString = auxiliar.toString() + "\n";
-      // }
     /**
-     * 
+     * imprime los valores mayores al promedio ingresado del arbol, de manera recursiva
      */
     public String ImprimeNodoMayor(NodoArbol Nodo, float promedio) {
         String arbolString = "";
@@ -130,7 +126,7 @@ public class Arbol
     
     
     /**
-     * 
+     * imprime los valores menores al promedio ingresado del arbol 
      */
     public String toStringMenor(float promedio) {
         NodoArbol auxiliar = inicio;
@@ -150,11 +146,8 @@ public class Arbol
         return arbolString;
     }
     
-       // if (auxiliar.getPromedio() > promedio) {
-       //     arbolString = auxiliar.toString() + "\n";
-      // }
     /**
-     * 
+     * imprime los valores menores al promedio ingresado del arbol, de manera recursiva
      */
     public String ImprimeNodoMenor(NodoArbol Nodo, float promedio) {
         String arbolString = "";
@@ -172,7 +165,7 @@ public class Arbol
     
     
     /**
-     * 
+     * imprime los valores iguales al promedio ingresado del arbol
      */
     public String toStringIgual(float promedio) {
         NodoArbol auxiliar = inicio;
@@ -192,11 +185,9 @@ public class Arbol
         return arbolString;
     }
     
-       // if (auxiliar.getPromedio() > promedio) {
-       //     arbolString = auxiliar.toString() + "\n";
-      // }
+      
     /**
-     * 
+     * imprime los valores iguales al promedio ingresado del arbol, de manera recursiva
      */
     public String ImprimeNodoIgual(NodoArbol Nodo, float promedio) {
         String arbolString = "";

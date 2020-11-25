@@ -5,7 +5,7 @@
  */
 public class Grupo
 {
-    
+    ListaEstudiantes lista = new ListaEstudiantes();
     /**
      * Constructor for objects of class Estudiantes
      */
@@ -16,7 +16,11 @@ public class Grupo
     /**
      * 
      */
-    public void sampleMethod()
+    public void agregarEstudiante(String nombre, int carnet)
     {
+        lista.agregar(nombre, carnet);
     }
+    
+    public void toStringLista(){
+    System.out.println(lista.toString());}
 }

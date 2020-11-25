@@ -13,7 +13,7 @@ public class NodoNota
     /**
      * Constructor for objects of class Nodo
      */
-    public void NodoNota()
+    public NodoNota()
     {
         this.nota = 0;
         this.siguiente = null;

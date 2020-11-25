@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=NodoEstudiante
+comment0.text=\r\n\r\n\ @author\ Dylan\ Tenorio\ Rojas\ C07802\r\n\ @version\ 25/11/2020\r\n
+comment1.params=Nombre\ Carnet
+comment1.target=NodoEstudiante(java.lang.String,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Nodo\r\n
+comment2.params=
+comment2.target=Estudiante\ getEstudiante()
+comment3.params=Estudiante
+comment3.target=void\ setEstudiante(Estudiante)
+comment4.params=
+comment4.target=NodoEstudiante\ getSiguiente()
+comment5.params=
+comment5.target=java.lang.String\ getNombre()
+comment6.params=siguiente
+comment6.target=void\ setSiguiente(NodoEstudiante)
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

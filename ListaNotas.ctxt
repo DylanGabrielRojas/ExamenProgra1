@@ -2,7 +2,7 @@
 comment0.target=ListaNotas
 comment0.text=\r\n\r\n\ @author\ Dylan\ Tenorio\ Rojas\ C07802\r\n\ @version\ 25/11/2020\r\n
 comment1.params=
-comment1.target=void\ ListaNotas()
+comment1.target=ListaNotas()
 comment2.params=
 comment2.target=boolean\ esVacia()
 comment3.params=

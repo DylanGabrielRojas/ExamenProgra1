@@ -10,7 +10,7 @@ public class ListaNotas
     private NodoNota inicio;
     private int tamanio;
 
-    public void ListaNotas()
+    public ListaNotas()
     {
         inicio = null;
         tamanio = 0;

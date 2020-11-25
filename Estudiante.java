@@ -3,7 +3,7 @@
  * @author Dylan Tenorio Rojas C07802
  * @version 25/11/2020
  */
-public class Estudiantes
+public class Estudiante
 {
     private String nombre;
     private int carnet;
@@ -13,7 +13,7 @@ public class Estudiantes
     /**
      * Constructor for objects of class Estudiantes
      */
-    public Estudiantes(String nombreParam, int carnetParam)
+    public Estudiante(String nombreParam, int carnetParam)
     {
         this.nombre = nombreParam;
         this.carnet = carnetParam;

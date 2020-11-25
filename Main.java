@@ -9,8 +9,10 @@ public class Main
 {
     public static void main(String[] args)
     {
-        String uwu = "a", owo = "b";
-        System.out.println(owo.compareToIgnoreCase(uwu));
-        
+        Grupo grupo = new Grupo();
+        String nombre = "uwu";
+        int carnet = 42069;
+        grupo.agregarEstudiante(nombre, carnet);
+        grupo.toStringLista();
     }
 }

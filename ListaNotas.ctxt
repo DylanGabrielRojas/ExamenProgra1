@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=ListaNotas
+comment0.text=\r\n\r\n\ @author\ Dylan\ Tenorio\ Rojas\ C07802\r\n\ @version\ 25/11/2020\r\n
+comment1.params=
+comment1.target=void\ ListaNotas()
+comment2.params=
+comment2.target=boolean\ esVacia()
+comment3.params=
+comment3.target=int\ getTamanio()
+comment4.params=
+comment4.target=NodoNota\ getInicio()
+comment5.params=Nota
+comment5.target=void\ agregar(int)
+comment6.params=auxiliar
+comment6.target=float\ CalcularPromedio(NodoNota)
+numComments=7

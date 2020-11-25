@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=NodoNota
+comment0.text=\r\n\r\n\ @author\ Dylan\ Tenorio\ Rojas\ C07802\r\n\ @version\ 25/11/2020\r\n
+comment1.params=
+comment1.target=void\ NodoNota()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Nodo\r\n
+comment2.params=
+comment2.target=int\ getNota()
+comment3.params=Nota
+comment3.target=void\ setNota(int)
+comment4.params=
+comment4.target=NodoNota\ getSiguiente()
+comment5.params=siguiente
+comment5.target=void\ setSiguiente(NodoNota)
+numComments=6

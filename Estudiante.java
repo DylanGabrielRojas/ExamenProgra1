@@ -62,7 +62,6 @@ public class Estudiante
      * 
      */
     public Float getPromedio(){
-        System.out.println(this.promedio);
         return this.promedio;
     }
 }

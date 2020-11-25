@@ -1,7 +1,22 @@
 #BlueJ class context
 comment0.target=NodoArbol
 comment0.text=\r\n\r\n\ @author\ Dylan\ Tenorio\ Rojas\ C07802\r\n\ @version\ 25/11/2020\r\n
-comment1.params=
-comment1.target=NodoArbol()
+comment1.params=NodoEstudiante
+comment1.target=NodoArbol(NodoEstudiante)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Nodo\r\n
-numComments=2
+comment2.params=
+comment2.target=float\ getPromedio()
+comment2.text=\r\n\ \r\n
+comment3.params=
+comment3.target=NodoArbol\ getDerecho()
+comment3.text=\r\n\ \r\n
+comment4.params=derechoParam
+comment4.target=void\ setDerecho(NodoArbol)
+comment4.text=\r\n\ \r\n
+comment5.params=
+comment5.target=NodoArbol\ getIzquierdo()
+comment5.text=\r\n\ \r\n
+comment6.params=izquierdoParam
+comment6.target=void\ setIzquierdo(NodoArbol)
+comment6.text=\r\n\ \r\n
+numComments=7

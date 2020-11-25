@@ -48,4 +48,8 @@ public class Grupo
     public void toStringLista(){
         System.out.println(lista.toString());   
     }
+    public void LlenarArbol(){
+        arbol.agregar(lista);
+        System.out.println(arbol.toString());
+    }
 }

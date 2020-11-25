@@ -43,6 +43,10 @@ public class NodoEstudiante
         return estudiante.getNombre();
     }
     
+    public float getPromedio(){
+        return estudiante.getPromedio();
+    }
+    
     public void setSiguiente(NodoEstudiante siguiente)
     {
         this.siguiente = siguiente;

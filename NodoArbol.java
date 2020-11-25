@@ -8,13 +8,50 @@ public class NodoArbol
 {
     // instance variables - replace the example below with your own
     private NodoEstudiante estudiante;
-    private NodoArbol siguiente;
-    private NodoArbol anterior;
+    private NodoArbol derecho;
+    private NodoArbol izquierdo;
 
     /**
      * Constructor for objects of class Nodo
      */
-    public NodoArbol()
+    public NodoArbol(NodoEstudiante NodoEstudiante)
     {
+        this.estudiante = NodoEstudiante;
     }
+    
+    /**
+     * 
+     */
+    public float getPromedio(){
+        return estudiante.getPromedio();
+    }
+    
+    /**
+     * 
+     */
+    public NodoArbol getDerecho(){
+        return derecho;
+    }
+    
+    /**
+     * 
+     */
+    public void setDerecho(NodoArbol derechoParam){
+        this.derecho = derechoParam;
+    }
+    
+    /**
+     * 
+     */
+    public NodoArbol getIzquierdo(){
+        return izquierdo;
+    }
+    
+    /**
+     * 
+     */
+    public void setIzquierdo(NodoArbol izquierdoParam){
+        this.izquierdo = izquierdoParam;
+    }
+    
 }

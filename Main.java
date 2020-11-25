@@ -16,5 +16,6 @@ public class Main
             System.out.println("Desea ingresar otro estudiante? \n 1) si \n 2) no");
             op = scanInt.nextInt();
         }while (op !=2);
+        grupo.LlenarArbol();
     }
 }

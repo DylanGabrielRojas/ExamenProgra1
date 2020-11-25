@@ -35,7 +35,6 @@ public void agregar(String nombre, int carnet, int[] Notas)
     NodoEstudiante nuevoNodo = new NodoEstudiante(nombre, carnet);
     for(int i=0; i <Notas.length; i++){
         nuevoNodo.AgregarNota(Notas[i]);
-        System.out.println(i);
     }
     if(esVacia())
     {
@@ -47,7 +46,6 @@ public void agregar(String nombre, int carnet, int[] Notas)
         if(nuevoNodo.getNombre().compareToIgnoreCase(auxiliar.getNombre()) < 0){
             inicio = nuevoNodo;
             nuevoNodo.setSiguiente(auxiliar);
-            auxiliar.setSiguiente(null);
         } else {
             if (auxiliar.getSiguiente() != null) {
                 auxiliar = auxiliar.getSiguiente();
@@ -57,14 +55,12 @@ public void agregar(String nombre, int carnet, int[] Notas)
             }
         }
     }
-tamanio++;
+    this.tamanio = tamanio + 1;
 }
     
 public void agregarAlfabeticamente(NodoEstudiante Nuevo, NodoEstudiante auxiliar, NodoEstudiante auxiliarAnterior) {
     if (auxiliar.getSiguiente() != null){
-            System.out.println("FUCK");
         if(Nuevo.getNombre().compareToIgnoreCase(auxiliar.getNombre()) < 0){
-            System.out.println("FUCK");
             auxiliarAnterior.setSiguiente(Nuevo);
             Nuevo.setSiguiente(auxiliar);
         } else {
@@ -90,5 +86,21 @@ public String toString(){
     }
     lista = lista + auxiliar.toString();
     return lista;
+}
+
+/**
+ * 
+ */
+public NodoEstudiante[] PasarArbol(){
+    NodoEstudiante auxiliar = inicio;
+    NodoEstudiante[] VectorLista = new NodoEstudiante[tamanio];
+    int contador = 0;
+    while (auxiliar.getSiguiente() != null){
+        VectorLista[contador] = auxiliar;
+        contador++;
+        auxiliar = auxiliar.getSiguiente();
+    }
+    VectorLista[contador] = auxiliar;
+    return VectorLista;
 }
 }

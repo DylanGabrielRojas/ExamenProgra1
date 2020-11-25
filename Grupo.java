@@ -45,11 +45,50 @@ public class Grupo
         agregarEstudianteLista(nombre, carnet, Notas);
     }
     
+    
+    /**
+     * 
+     */
     public void toStringLista(){
         System.out.println(lista.toString());   
     }
+    
+    /**
+     * 
+     */
     public void LlenarArbol(){
         arbol.agregar(lista);
+    }
+    
+    
+    /**
+     * 
+     */
+    public void MostrarTodo(){
         System.out.println(arbol.toString());
+    }
+    
+    
+    /**
+     * 
+     */
+    public void MostrarMayor(float promedio){
+        System.out.println(arbol.toStringMayor(promedio));
+    }
+    
+    
+    /**
+     * 
+     */
+    public void MostrarMenor(float promedio){
+        System.out.println(arbol.toStringMenor(promedio));
+    }
+    
+    
+    /**
+     * 
+     */
+    public void MostrarIgual(float promedio){
+        System.out.println(arbol.toStringIgual(promedio));
     }
 }

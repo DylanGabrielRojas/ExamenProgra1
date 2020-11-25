@@ -29,6 +29,21 @@ public class NodoArbol
     /**
      * 
      */
+    public String getNombre(){
+        return estudiante.getNombre();
+    }
+    
+    
+    /**
+     * 
+     */
+    public String toString(){
+        return estudiante.toString();
+    }
+    
+    /**
+     * 
+     */
     public NodoArbol getDerecho(){
         return derecho;
     }

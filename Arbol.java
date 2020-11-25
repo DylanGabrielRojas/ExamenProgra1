@@ -14,6 +14,10 @@ public class Arbol
         inicio = null;
     }
     
+    
+    /**
+     * 
+     */
     public void agregar(ListaEstudiantes Lista){
         NodoEstudiante[] VectorLista = Lista.PasarArbol();
         for (int i = 0; i <VectorLista.length; i++){
@@ -49,9 +53,13 @@ public class Arbol
         }
     }
     
+    
+    /**
+     * 
+     */
     public String toString() {
         NodoArbol auxiliar = inicio;
-        String arbolString = auxiliar.getPromedio() + " ";
+        String arbolString =auxiliar.toString() + "\n";
         if (auxiliar.getIzquierdo() != null){
             arbolString = arbolString + ImprimeNodo(auxiliar.getIzquierdo());
         }
@@ -61,8 +69,14 @@ public class Arbol
         return arbolString;
     }
     
+       // if (auxiliar.getPromedio() > promedio) {
+       //     arbolString = auxiliar.toString() + "\n";
+      // }
+    /**
+     * 
+     */
     public String ImprimeNodo(NodoArbol Nodo) {
-        String arbolString = Nodo.getPromedio() + " ";
+        String arbolString =Nodo.toString() + "\n";
         if (Nodo.getIzquierdo() != null){
             arbolString = arbolString + ImprimeNodo(Nodo.getIzquierdo());
         }
@@ -71,4 +85,131 @@ public class Arbol
         }
         return arbolString;
     }
+    
+    
+    /**
+     * 
+     */
+    public String toStringMayor(float promedio) {
+        NodoArbol auxiliar = inicio;
+        String arbolString = "";
+        if (auxiliar.getPromedio() > promedio) {
+            arbolString = auxiliar.toString() + "\n";
+        }
+        if (auxiliar.getIzquierdo() != null){
+            arbolString = arbolString + ImprimeNodoMayor(auxiliar.getIzquierdo(), promedio);
+        }
+        if (auxiliar.getDerecho() != null) {
+            arbolString = arbolString + ImprimeNodoMayor(auxiliar.getDerecho(), promedio);
+        }
+        if (arbolString == ""){
+        arbolString ="No hay concidencias";
+        }
+        return arbolString;
+    }
+    
+       // if (auxiliar.getPromedio() > promedio) {
+       //     arbolString = auxiliar.toString() + "\n";
+      // }
+    /**
+     * 
+     */
+    public String ImprimeNodoMayor(NodoArbol Nodo, float promedio) {
+        String arbolString = "";
+        if (Nodo.getPromedio() > promedio) {
+            arbolString = Nodo.toString() + "\n";
+        }
+        if (Nodo.getIzquierdo() != null){
+            arbolString = arbolString + ImprimeNodoMayor(Nodo.getIzquierdo(), promedio);
+        }
+        if (Nodo.getDerecho() != null) {
+            arbolString = arbolString + ImprimeNodoMayor(Nodo.getDerecho(), promedio);
+        }
+        return arbolString;
+    }
+    
+    
+    /**
+     * 
+     */
+    public String toStringMenor(float promedio) {
+        NodoArbol auxiliar = inicio;
+        String arbolString = "";
+        if (auxiliar.getPromedio() < promedio) {
+            arbolString = auxiliar.toString() + "\n";
+        }
+        if (auxiliar.getIzquierdo() != null){
+            arbolString = arbolString + ImprimeNodoMayor(auxiliar.getIzquierdo(), promedio);
+        }
+        if (auxiliar.getDerecho() != null) {
+            arbolString = arbolString + ImprimeNodoMayor(auxiliar.getDerecho(), promedio);
+        }
+        if (arbolString == ""){
+        arbolString ="No hay concidencias";
+        }
+        return arbolString;
+    }
+    
+       // if (auxiliar.getPromedio() > promedio) {
+       //     arbolString = auxiliar.toString() + "\n";
+      // }
+    /**
+     * 
+     */
+    public String ImprimeNodoMenor(NodoArbol Nodo, float promedio) {
+        String arbolString = "";
+        if (Nodo.getPromedio() < promedio) {
+            arbolString = Nodo.toString() + "\n";
+        }
+        if (Nodo.getIzquierdo() != null){
+            arbolString = arbolString + ImprimeNodoMayor(Nodo.getIzquierdo(), promedio);
+        }
+        if (Nodo.getDerecho() != null) {
+            arbolString = arbolString + ImprimeNodoMayor(Nodo.getDerecho(), promedio);
+        }
+        return arbolString;
+    }
+    
+    
+    /**
+     * 
+     */
+    public String toStringIgual(float promedio) {
+        NodoArbol auxiliar = inicio;
+        String arbolString = "";
+        if (auxiliar.getPromedio() == promedio) {
+            arbolString = auxiliar.toString() + "\n";
+        }
+        if (auxiliar.getIzquierdo() != null){
+            arbolString = arbolString + ImprimeNodoMayor(auxiliar.getIzquierdo(), promedio);
+        }
+        if (auxiliar.getDerecho() != null) {
+            arbolString = arbolString + ImprimeNodoMayor(auxiliar.getDerecho(), promedio);
+        }
+        if (arbolString == ""){
+        arbolString ="No hay concidencias";
+        }
+        return arbolString;
+    }
+    
+       // if (auxiliar.getPromedio() > promedio) {
+       //     arbolString = auxiliar.toString() + "\n";
+      // }
+    /**
+     * 
+     */
+    public String ImprimeNodoIgual(NodoArbol Nodo, float promedio) {
+        String arbolString = "";
+        if (Nodo.getPromedio() == promedio) {
+            arbolString = Nodo.toString() + "\n";
+        }
+        if (Nodo.getIzquierdo() != null){
+            arbolString = arbolString + ImprimeNodoMayor(Nodo.getIzquierdo(), promedio);
+        }
+        if (Nodo.getDerecho() != null) {
+            arbolString = arbolString + ImprimeNodoMayor(Nodo.getDerecho(), promedio);
+        }
+        return arbolString;
+    }
+    
 }

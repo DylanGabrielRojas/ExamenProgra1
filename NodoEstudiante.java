@@ -19,39 +19,71 @@ public class NodoEstudiante
         this.siguiente = null;
     }
     
+    
+    /**
+     * 
+     */
     public void AgregarNota(int Nota)
     {
         this.estudiante.AgregarNota(Nota);
     }
     
+    
+    /**
+     * 
+     */
     public Estudiante getEstudiante()
     {
         return estudiante;
     }
     
+    
+    /**
+     * 
+     */
     public void setEstudiante(Estudiante Estudiante)
     {
         this.estudiante = Estudiante;
     }
 
+    
+    /**
+     * 
+     */
     public NodoEstudiante getSiguiente()
     {
         return siguiente;
     }
     
+    
+    /**
+     * 
+     */
     public String getNombre(){
         return estudiante.getNombre();
     }
     
+    
+    /**
+     * 
+     */
     public float getPromedio(){
         return estudiante.getPromedio();
     }
     
+    
+    /**
+     * 
+     */
     public void setSiguiente(NodoEstudiante siguiente)
     {
         this.siguiente = siguiente;
     }
     
+    
+    /**
+     * 
+     */
     public String toString(){
         return estudiante.toString();
     }

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Arbol
+comment0.text=\r\n\r\n\ @author\ Dylan\ Tenorio\ Rojas\ C07802\r\n\ @version\ 25/11/2020\r\n
+comment1.params=
+comment1.target=Arbol()
+comment2.params=Lista
+comment2.target=void\ agregar(ListaEstudiantes)
+numComments=3

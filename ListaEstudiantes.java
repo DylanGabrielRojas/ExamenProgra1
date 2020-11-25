@@ -30,9 +30,13 @@ public NodoEstudiante getInicio()
     return inicio;
 }
 
-public void agregar(String nombre, int carnet)
+public void agregar(String nombre, int carnet, int[] Notas)
 {
     NodoEstudiante nuevoNodo = new NodoEstudiante(nombre, carnet);
+    for(int i=0; i <Notas.length; i++){
+        nuevoNodo.AgregarNota(Notas[i]);
+        System.out.println(i);
+    }
     if(esVacia())
     {
         inicio = nuevoNodo;
@@ -81,7 +85,8 @@ public String toString(){
     NodoEstudiante auxiliar = inicio;
     String lista ="";
     while(auxiliar.getSiguiente() != null){
-        lista = lista + auxiliar.toString();
+        lista = lista + auxiliar.toString() + "\n";
+        auxiliar = auxiliar.getSiguiente();
     }
     lista = lista + auxiliar.toString();
     return lista;

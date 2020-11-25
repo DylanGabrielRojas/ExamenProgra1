@@ -19,6 +19,11 @@ public class NodoEstudiante
         this.siguiente = null;
     }
     
+    public void AgregarNota(int Nota)
+    {
+        this.estudiante.AgregarNota(Nota);
+    }
+    
     public Estudiante getEstudiante()
     {
         return estudiante;

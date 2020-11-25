@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=NodoArbol
+comment0.text=\r\n\r\n\ @author\ Dylan\ Tenorio\ Rojas\ C07802\r\n\ @version\ 25/11/2020\r\n
+comment1.params=
+comment1.target=NodoArbol()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Nodo\r\n
+numComments=2

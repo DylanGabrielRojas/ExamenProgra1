@@ -135,10 +135,10 @@ public class Arbol
             arbolString = auxiliar.toString() + "\n";
         }
         if (auxiliar.getIzquierdo() != null){
-            arbolString = arbolString + ImprimeNodoMayor(auxiliar.getIzquierdo(), promedio);
+            arbolString = arbolString + ImprimeNodoMenor(auxiliar.getIzquierdo(), promedio);
         }
         if (auxiliar.getDerecho() != null) {
-            arbolString = arbolString + ImprimeNodoMayor(auxiliar.getDerecho(), promedio);
+            arbolString = arbolString + ImprimeNodoMenor(auxiliar.getDerecho(), promedio);
         }
         if (arbolString == ""){
         arbolString ="No hay concidencias";
@@ -155,10 +155,10 @@ public class Arbol
             arbolString = Nodo.toString() + "\n";
         }
         if (Nodo.getIzquierdo() != null){
-            arbolString = arbolString + ImprimeNodoMayor(Nodo.getIzquierdo(), promedio);
+            arbolString = arbolString + ImprimeNodoMenor(Nodo.getIzquierdo(), promedio);
         }
         if (Nodo.getDerecho() != null) {
-            arbolString = arbolString + ImprimeNodoMayor(Nodo.getDerecho(), promedio);
+            arbolString = arbolString + ImprimeNodoMenor(Nodo.getDerecho(), promedio);
         }
         return arbolString;
     }
@@ -174,10 +174,10 @@ public class Arbol
             arbolString = auxiliar.toString() + "\n";
         }
         if (auxiliar.getIzquierdo() != null){
-            arbolString = arbolString + ImprimeNodoMayor(auxiliar.getIzquierdo(), promedio);
+            arbolString = arbolString + ImprimeNodoIgual(auxiliar.getIzquierdo(), promedio);
         }
         if (auxiliar.getDerecho() != null) {
-            arbolString = arbolString + ImprimeNodoMayor(auxiliar.getDerecho(), promedio);
+            arbolString = arbolString + ImprimeNodoIgual(auxiliar.getDerecho(), promedio);
         }
         if (arbolString == ""){
         arbolString ="No hay concidencias";
@@ -195,10 +195,10 @@ public class Arbol
             arbolString = Nodo.toString() + "\n";
         }
         if (Nodo.getIzquierdo() != null){
-            arbolString = arbolString + ImprimeNodoMayor(Nodo.getIzquierdo(), promedio);
+            arbolString = arbolString + ImprimeNodoIgual(Nodo.getIzquierdo(), promedio);
         }
         if (Nodo.getDerecho() != null) {
-            arbolString = arbolString + ImprimeNodoMayor(Nodo.getDerecho(), promedio);
+            arbolString = arbolString + ImprimeNodoIgual(Nodo.getDerecho(), promedio);
         }
         return arbolString;
     }
